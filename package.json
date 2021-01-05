@@ -16,7 +16,7 @@
     "@types/redux-saga": "^0.10.5",
     "@types/styled-components": "^4.1.16",
     "ashishdotme-ui": "^1.1.7",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bulma-pagination-react": "^0.1.1",
     "moment": "^2.24.0",
     "node-sass": "^4.13.0",
