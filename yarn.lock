@@ -1975,9 +1975,9 @@ asap@~2.0.6:
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
 
-ashishdotme-ui@^1.1.7:
+@ashishdotme/ui@^1.1.7:
   version "1.1.7"
-  resolved "https://registry.yarnpkg.com/ashishdotme-ui/-/ashishdotme-ui-1.1.7.tgz#ffab934bd23d20ec69db62dca6ea4da37de78155"
+  resolved "https://registry.yarnpkg.com/@ashishdotme/ui/-/@ashishdotme/ui-1.1.7.tgz#ffab934bd23d20ec69db62dca6ea4da37de78155"
   integrity sha512-hgzCLxXzu5zkLd8WnIKqblTB3oW4SyFQKl5/+4UbjxCeOZ29AI+z/0z4t01mNqxxhxVqYgfLsOl6qwmas0szYQ==
   dependencies:
     "@types/jest" "24.0.15"

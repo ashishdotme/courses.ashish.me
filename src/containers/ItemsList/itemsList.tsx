@@ -9,9 +9,9 @@ import { fetchItemList } from '../../core/action/itemsList'
 import ItemCards from '../../components/ItemCard/ItemCard'
 import MainFilters from '../../components/mainFilters/mainFilters'
 import Pagination from 'bulma-pagination-react'
-import Hero from 'ashishdotme-ui/components/hero'
-import Filter from 'ashishdotme-ui/components/filter'
-import { DropdownItem } from 'ashishdotme-ui/components/dropdown/dropdown'
+import Hero from '@ashishdotme/ui/components/hero'
+import Filter from '@ashishdotme/ui/components/filter'
+import { DropdownItem } from '@ashishdotme/ui/components/dropdown/dropdown'
 import history from '../../core/history'
 import { Course } from '../../core/models/course'
 import { ItemState } from '../../core/reducers'
@@ -120,18 +120,13 @@ class ItemsList extends React.Component<ItemsListProps, State> {
   public getFilteredItems = (results: Course[]) => {
     const { selectedCategory, selectedCompletedYear, searchTerm } = this.state
     if (selectedCategory.key !== '-1') {
-      results = results.filter(item => item.category.includes(selectedCategory.value))
+      results = results.filter((item) => item.category.includes(selectedCategory.value))
     }
     if (selectedCompletedYear.key !== '-1') {
-      results = results.filter(
-        item =>
-          moment(item.completedDate)
-            .year()
-            .toString() === selectedCompletedYear.value,
-      )
+      results = results.filter((item) => moment(item.completedDate).year().toString() === selectedCompletedYear.value)
     }
     if (searchTerm && !_.isEmpty(searchTerm)) {
-      results = results.filter(item => item.title.toLowerCase().includes(searchTerm.toLowerCase()))
+      results = results.filter((item) => item.title.toLowerCase().includes(searchTerm.toLowerCase()))
     }
     return results
   }
