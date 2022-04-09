@@ -18,7 +18,7 @@
     "@ashishdotme/ui": "^1.1.7",
     "axios": "^0.18.0",
     "bulma-pagination-react": "^0.1.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-sass": "^4.13.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
